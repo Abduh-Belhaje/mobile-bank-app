@@ -1,0 +1,33 @@
+version: '3'
+services:
+  postgres:
+    image: postgres
+    ports:
+      - "5445:5432"
+    environment:
+      POSTGRES_USER : postgres
+      POSTGRES_PASSWORD : admin
+      POSTGRES_DB : notification-service
+    container_name: postgres-notifications
+
+  notification:
+    build: .
+    container_name: notification
+    ports:
+      - "8088:8088"
+    expose:
+      - '8088'
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-notifications:5432/notification-service
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=admin
+      - User-Access-Token=Bearer EAAFm4nayQpgBO58WhCIQKcRKIo2YLetEzyxTAn9ErgV082Td0kS7CLOAAxKhQk0LHQBa0dMSQ63OAVE9eG7l8q1rPMDi6aVG8vahtHA4K9ZBjNRjYd1g9vIYHydLNmoMjCIsgVsgHXmSK5FG80MIDcIpk8d7dJYxop4qqS8zm5mo2lxbxzQh1VP2IwUkKmkqhEw95C3n0cw9SKwEZD
+      - Url=https://graph.facebook.com/v19.0/294334807093557/messages
+    depends_on:
+      - postgres
+
+
+
+
+
+

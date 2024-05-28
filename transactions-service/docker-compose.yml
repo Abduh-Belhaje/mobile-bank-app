@@ -1,0 +1,18 @@
+version: '3'
+services:
+
+  postgres:
+    image: postgres
+    ports:
+      - "5435:5432"
+    environment:
+      POSTGRES_USER : postgres
+      POSTGRES_PASSWORD : admin
+      POSTGRES_DB : transactions-service
+    container_name: postgres-transaction
+
+
+
+
+
+
