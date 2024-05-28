@@ -122,4 +122,13 @@ public class AuthServiceImpl implements AuthService {
             throw new MessageSendingException("A problem was acqurred when sending message");
         }
     }
+
+
+    public void changePassword(String email , String newPasswd) throws InvalidEmailException {
+        Client client = clientRepository.findClientByEmail(email)
+                .orElseThrow(()-> new InvalidEmailException("Email doesn't exist : " + email));
+
+        client.setC_password(passwordEncoder.encode(newPasswd));
+        clientRepository.save(client);
+    }
 }

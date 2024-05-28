@@ -20,6 +20,7 @@ public interface AuthService {
     boolean checkEmail(String email);
 
     Client getClient(String email) throws InvalidEmailException;
-
     int generateRandomNumber(String phone) throws MessageSendingException;
+
+    void changePassword(String email , String newPasswd) throws InvalidEmailException;
 }

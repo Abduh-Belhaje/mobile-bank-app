@@ -58,4 +58,13 @@ public class AuthController {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
         }
     }
+
+    public ResponseEntity<?> changePasswd(String email , String newPasswd ){
+        try{
+            authService.changePassword(email,newPasswd);
+            return ResponseEntity.ok("password changed");
+        } catch (InvalidEmailException e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
+        }
+    }
 }
