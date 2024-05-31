@@ -140,4 +140,32 @@ class AuthServiceTest {
                 .isInstanceOf(EmailAlreadyExistsException.class)
                 .hasMessage("Email already exists in the database.");
     }
+
+    @Test
+    void shouldChangePassword() throws InvalidEmailException {
+
+        String email = "xx@example.com";
+        String newPasswd = "12345";
+        Client client = new Client(
+                "abdo",
+                "belhaje",
+                email,
+                passwordEncoder.encode("password"),
+                "xxxxxxx",
+                Role.USER
+        );
+
+        given(clientRepository.findClientByEmail(email))
+                .willReturn(Optional.of(client));
+        when(passwordEncoder.encode(newPasswd)).thenReturn("encodedPassword");
+
+        authService.changePassword(email,newPasswd);
+
+        ArgumentCaptor<Client> clientArgumentCaptor = ArgumentCaptor.forClass(Client.class);
+        verify(clientRepository).save(clientArgumentCaptor.capture());
+        assertThat(clientArgumentCaptor.getValue().getPassword()).isEqualTo("encodedPassword");
+
+
+
+    }
 }
