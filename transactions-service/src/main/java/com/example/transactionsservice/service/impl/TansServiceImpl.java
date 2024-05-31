@@ -68,7 +68,7 @@ public class TansServiceImpl implements TransService {
             operation = operaRepository.save(operation);
             String notificationMessage = "Your recent transaction was successful:\\n" +
                     "🔹 TYPE: Withdraw \\n" +
-                    "🔹 Date: " + operation.getOperation_date() + "\\n" +
+                    "🔹 Date: " + operation.getOperation_date().toString().substring(0,10) + "\\n" +
                     "🔹 Amount: " + operation.getAmount();
 
             sendNotification(phone,notificationMessage);
