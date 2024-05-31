@@ -124,6 +124,7 @@ public class AuthServiceImpl implements AuthService {
     }
 
 
+    @Override
     public void changePassword(String email , String newPasswd) throws InvalidEmailException {
         Client client = clientRepository.findClientByEmail(email)
                 .orElseThrow(()-> new InvalidEmailException("Email doesn't exist : " + email));
