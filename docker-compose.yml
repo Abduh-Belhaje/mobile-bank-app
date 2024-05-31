@@ -128,7 +128,7 @@ services:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-notifications:5432/notifications-service
       - SPRING_DATASOURCE_USERNAME=postgres
       - SPRING_DATASOURCE_PASSWORD=admin
-      - User-Access-Token=Bearer EAAFm4nayQpgBO7ZC5o2CmZAKfSMZBez0mMeRee2GkCcKLzZA9fpcFXhGUc4YJYPSbmSFHDiWmeESDFQrvPPauD1bX8RZCcuo7dFE0tkC8rcw3yx9HBGgTsmW4y1UlZBthkkaZCg7G6N8b8at4kS01wi69s9PgsGp1uSKB4VBVZAqXJB2vdZBdQWmvPi1P7Rscqe3axIbw2OOMHWZAam3dwIc2IneRoIzuZCGG9BB1cZD
+      - User-Access-Token=Bearer EAAFm4nayQpgBO35dW8oHWfpOBWQHROx4d1Y4tzFBBPr51tX8iLSEh3xx4ssoOG1o5PjAB1BfHRuVR3otgl1ZB8UbDB36TLJ81AqTZC6rBDcsdVFZA1I3CfhNx6He9s9J9nqSSyvXYjOAL04U7ipBD3q3ysHcVP3w0NjZBtxCe0e214ZAf8rz3Tojfqt5XcY0mTub8du7I9U70iezWRBMAkHP9pHUVOOCwvkYZD
       - Url=https://graph.facebook.com/v19.0/294334807093557/messages
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost:8088/actuator/health" ]
