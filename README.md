@@ -16,5 +16,6 @@
 
 ### Screens :
 
-![alt text](/support/Home.png)    ![alt text](/support/Withdraw.png) 
+![alt text](/support/Home.png)    ![alt text](/support/Withdraw.png) ![alt text](/support/history.png) ![alt text](/support/info.png) ![alt text](/support/signup.png) ![alt text](/support/login.png) 
  
+![alt text](/support/success.png) ![alt text](/support/history.png) 
