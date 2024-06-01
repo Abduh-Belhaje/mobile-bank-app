@@ -16,4 +16,4 @@
 
 ### Screens :
 
-![alt text](/support/0a787149935.png)        ![alt text](/support/0a787149935 (1).png)  
+###![alt text](/support/Home.png)        ###![alt text](/support/Withdraw.png)  
