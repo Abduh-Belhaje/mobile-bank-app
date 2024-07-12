@@ -1,21 +1,60 @@
-## Development of a Mobile Banking Application with Microservices Architecture Using Flutter and Spring Boot
+# Mobile Banking Application
 
-### Services :
-- Authentication Service: Manages registration, connection and session management.
-- Account Management Service: Manages bank account information.
-- Transaction Service: Processes transactions and provides history.
-- Notifications Service: Sends alerts and notifications in real time.
+![Project Architecture](/support/MSS.png)
+
+## Introduction
+
+This project involves the development of a mobile banking application with a microservices architecture using Flutter for the frontend and Spring Boot for the backend.
+
+## Features
+
+- **Authentication Service**: Manages user registration, login, and session management.
+- **Account Management Service**: Handles bank account information and management.
+- **Transaction Service**: Processes transactions and provides transaction history.
+- **Notifications Service**: Sends real-time alerts and notifications to users.
+
+## Architecture
+
+The application is designed with a microservices architecture to ensure scalability and maintainability. Each service operates independently and communicates via REST APIs.
+
+### Services
+
+1. **Authentication Service**
+   - Handles user registration, login, and session management.
+2. **Account Management Service**
+   - Manages user bank accounts, including balance inquiries and account details.
+3. **Transaction Service**
+   - Processes financial transactions and maintains transaction history.
+4. **Notifications Service**
+   - Sends real-time notifications and alerts to users about their account activities.
+
+## Tech Stack
+
+- **Frontend**: Flutter
+- **Backend**: Spring Boot
+- **Database**: [Specify Database, e.g., PostgreSQL]
+- **Containerization**: Docker
+
+## Setup and Installation
+
+### Prerequisites
+
+- [Install Docker](https://docs.docker.com/get-docker/)
+- [Install Flutter](https://flutter.dev/docs/get-started/install)
+- [Install Java JDK](https://www.oracle.com/java/technologies/javase-downloads.html)
+
+### Steps
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Abduh-Belhaje/mobile-bank-app.git
+   cd mobile-bank-app
+
+2. Start the backend services using Docker:
+   ```sh
+   C:\*\Online banking system\microservices> docker-compose up -d
 
 
-### Project Architecture :
+### Screens
 
-
-![alt text](/support/MSS.png)
-
-
-
-### Screens :
-
-![alt text](/support/Home.png)    ![alt text](/support/Withdraw.png) ![alt text](/support/history.png) ![alt text](/support/info.png) ![alt text](/support/signup.png) ![alt text](/support/login.png) 
- 
-![alt text](/support/success.png) 
+<img src="/support/Home.png" width="300" />    ![alt text](/support/Withdraw.png) ![alt text](/support/history.png) ![alt text](/support/info.png) ![alt text](/support/signup.png) ![alt text](/support/login.png)  ![alt text](/support/success.png) 
