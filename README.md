@@ -53,10 +53,10 @@ The application is designed with a microservices architecture to ensure scalabil
 
 ### Screens
 
-<img src="/support/Home.png" width="300" />   
-<img src="/support/Withdraw.png" width="300" /> 
-<img src="/support/history.png" width="300" />  
-<img src="/support/info.png" width="300" /> 
-<img src="/support/signup.png" width="300" /> 
-<img src="/support/login.png" width="300" /> 
+<img src="/support/Home.png" width="300" />      <img src="/support/Withdraw.png" width="300" /> 
+
+<img src="/support/history.png" width="300" />   <img src="/support/info.png" width="300" />
+ 
+<img src="/support/signup.png" width="300" />    <img src="/support/login.png" width="300" /> 
+
 <img src="/support/success.png" width="300" /> 
