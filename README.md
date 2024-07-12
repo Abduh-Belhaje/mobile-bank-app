@@ -19,20 +19,16 @@ The application is designed with a microservices architecture to ensure scalabil
 
 ### Services
 
-1. **Authentication Service**
-   - Handles user registration, login, and session management.
-2. **Account Management Service**
-   - Manages user bank accounts, including balance inquiries and account details.
-3. **Transaction Service**
-   - Processes financial transactions and maintains transaction history.
-4. **Notifications Service**
-   - Sends real-time notifications and alerts to users about their account activities.
+1. **Authentication Service** : Handles user registration, login, and session management.
+2. **Account Management Service** : Manages user bank accounts, including balance inquiries and account details.
+3. **Transaction Service** : Processes financial transactions and maintains transaction history.
+4. **Notifications Service** : Sends real-time notifications and alerts to users about their account activities.
 
 ## Tech Stack
 
 - **Frontend**: Flutter
-- **Backend**: Spring Boot
-- **Database**: [Specify Database, e.g., PostgreSQL]
+- **Backend**: Spring Boot , Spring Cloud
+- **Database**: PostgreSQL
 - **Containerization**: Docker
 
 ## Setup and Installation
@@ -57,4 +53,10 @@ The application is designed with a microservices architecture to ensure scalabil
 
 ### Screens
 
-<img src="/support/Home.png" width="300" />    ![alt text](/support/Withdraw.png) ![alt text](/support/history.png) ![alt text](/support/info.png) ![alt text](/support/signup.png) ![alt text](/support/login.png)  ![alt text](/support/success.png) 
+<img src="/support/Home.png" width="300" />   
+<img src="/support/Withdraw.png" width="300" /> 
+<img src="/support/history.png" width="300" />  
+<img src="/support/info.png" width="300" /> 
+<img src="/support/signup.png" width="300" /> 
+<img src="/support/login.png" width="300" /> 
+<img src="/support/success.png" width="300" /> 
