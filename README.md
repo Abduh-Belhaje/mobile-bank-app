@@ -12,7 +12,7 @@ The application is designed with a microservices architecture to ensure scalabil
 ![Project Architecture](/support/MSS.png)
 
 
-## Features
+## Services
 
 - **Authentication Service**: Manages user registration, login, and session management.
 - **Account Management Service**: Handles bank account information and management.
