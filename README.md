@@ -1,10 +1,16 @@
 # Mobile Banking Application
 
-![Project Architecture](/support/MSS.png)
-
 ## Introduction
 
 This project involves the development of a mobile banking application with a microservices architecture using Flutter for the frontend and Spring Boot for the backend.
+
+
+## Architecture
+
+The application is designed with a microservices architecture to ensure scalability and maintainability. Each service operates independently and communicates via REST APIs.
+
+![Project Architecture](/support/MSS.png)
+
 
 ## Features
 
@@ -13,16 +19,6 @@ This project involves the development of a mobile banking application with a mic
 - **Transaction Service**: Processes transactions and provides transaction history.
 - **Notifications Service**: Sends real-time alerts and notifications to users.
 
-## Architecture
-
-The application is designed with a microservices architecture to ensure scalability and maintainability. Each service operates independently and communicates via REST APIs.
-
-### Services
-
-1. **Authentication Service** : Handles user registration, login, and session management.
-2. **Account Management Service** : Manages user bank accounts, including balance inquiries and account details.
-3. **Transaction Service** : Processes financial transactions and maintains transaction history.
-4. **Notifications Service** : Sends real-time notifications and alerts to users about their account activities.
 
 ## Tech Stack
 
